@@ -1,0 +1,5 @@
+app/node_modules/*
+build/*
+app/package-lock.json
+node_modules/*
+package-lock.json
