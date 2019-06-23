@@ -1,0 +1,6 @@
+{
+    "rinkeby" : {
+        "infuraKey" : "46e710c1f13d4725a78ffa655f5f757a",
+        "url" : "rinkeby.infura.io/v3/"
+    }
+}
