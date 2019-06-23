@@ -41,7 +41,17 @@ const App = {
 
   // Implement Task 4 Modify the front end of the DAPP
   lookUp: async function (){
-    
+      const {lookUptokenIdToStarInfo} = this.meta.methods
+      try {
+          const starId = await(document.getElementById('lookid').value)
+          const starName = await lookUptokenIdToStarInfo(starId).call()
+          App.setStatus(`Star for tokenId : ${starId} is ${starName}`)
+      } catch(e) {
+          App.setStatus("error can't enter anything other than number")
+      } finally {
+
+            document.getElementById('lookid').value = ''
+      }
   }
 
 };
